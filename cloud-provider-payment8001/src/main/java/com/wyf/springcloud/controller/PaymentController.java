@@ -67,4 +67,14 @@ public class PaymentController {
         return this.discoveryClient;
     }
 
+    /**
+     * 返回当前微服务的端口号
+     * @return 结果
+     */
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLb() {
+        return serverPort;
+    }
+
+
 }
