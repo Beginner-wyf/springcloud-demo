@@ -1,3 +1,6 @@
+D:\ZIJPSTPROJECT\learn\springcloud-demo\cloud-consumer-order80\src\main\java\com\wyf\myrole\MySelfRule.java
 D:\ZIJPSTPROJECT\learn\springcloud-demo\cloud-consumer-order80\src\main\java\com\wyf\springcloud\controller\OrderController.java
 D:\ZIJPSTPROJECT\learn\springcloud-demo\cloud-consumer-order80\src\main\java\com\wyf\springcloud\config\ApplicationContextConfig.java
+D:\ZIJPSTPROJECT\learn\springcloud-demo\cloud-consumer-order80\src\main\java\com\wyf\springcloud\lb\impl\MyLoadBalanceImpl.java
 D:\ZIJPSTPROJECT\learn\springcloud-demo\cloud-consumer-order80\src\main\java\com\wyf\springcloud\OrderMain80.java
+D:\ZIJPSTPROJECT\learn\springcloud-demo\cloud-consumer-order80\src\main\java\com\wyf\springcloud\lb\MyLoadBalance.java

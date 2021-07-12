@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author wangyifan
@@ -69,6 +70,7 @@ public class PaymentController {
 
     /**
      * 返回当前微服务的端口号
+     *
      * @return 结果
      */
     @GetMapping(value = "/payment/lb")
@@ -77,4 +79,19 @@ public class PaymentController {
     }
 
 
+    /**
+     * 请求延时接口
+     * @return 延时返回
+     */
+    @GetMapping(value = "/payment/feign/timeout")
+    public String paymentFeignTimeOut() {
+        System.out.println("*****paymentFeignTimeOut from port: " + serverPort);
+        //暂停几秒钟线程
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return serverPort;
+    }
 }

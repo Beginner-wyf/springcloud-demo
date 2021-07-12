@@ -25,4 +25,14 @@ public class OrderFeignController {
     public CommonResult<Payment> getPaymentById(@PathVariable("id") Long id) {
         return paymentFeignService.getPaymentById(id);
     }
+
+    /**
+     * 请求延时接口，openfeign的默认等待时间为1s
+     * 超过1s的请求会直接报错，若有需要可以另外配置等待时长
+     * @return 结果
+     */
+    @GetMapping(value = "/consumer/payment/feign/timeout")
+    public String paymentFeignTimeOut() {
+        return paymentFeignService.paymentFeignTimeOut();
+    }
 }
