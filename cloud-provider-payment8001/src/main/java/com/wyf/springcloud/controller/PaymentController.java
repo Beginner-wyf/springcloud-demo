@@ -81,6 +81,7 @@ public class PaymentController {
 
     /**
      * 请求延时接口
+     *
      * @return 延时返回
      */
     @GetMapping(value = "/payment/feign/timeout")
@@ -93,5 +94,14 @@ public class PaymentController {
             e.printStackTrace();
         }
         return serverPort;
+    }
+
+    /**
+     * 测试zipkin
+     * @return 结果
+     */
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin() {
+        return "hi ,i'am paymentzipkin server fall back，welcome to zipkin，O(∩_∩)O哈哈~";
     }
 }

@@ -35,4 +35,13 @@ public class OrderFeignController {
     public String paymentFeignTimeOut() {
         return paymentFeignService.paymentFeignTimeOut();
     }
+
+    /**
+     * 测试zipkin
+     * @return 结果
+     */
+    @GetMapping("/consumer/payment/zipkin")
+    public String paymentZipkin(){
+        return paymentFeignService.paymentZipkin();
+    }
 }

@@ -28,4 +28,11 @@ public interface PaymentFeignService {
      */
     @GetMapping(value = "/payment/feign/timeout")
     public String paymentFeignTimeOut();
+
+    /**
+     * 测试zipkin
+     * @return 结果
+     */
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin();
 }
